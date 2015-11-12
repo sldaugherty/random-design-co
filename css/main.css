@@ -96,14 +96,27 @@ textarea {
    ========================================================================== */
 
 
+.header-container {
+    background-color: black;
+    padding: 5px;
+    margin: 0;
+}
 
+h1, h2, .intro-button {
+    color: white;
+}
 
+h1 {
+    font-size: 1em;
+}
 
-
-
-
-
-
+h2 {
+    color: white;
+}
+.intro {
+    border: 1px solid red;
+    background-image: url('../img/purple-bg.jpg');
+}
 
 
 
