@@ -92,14 +92,24 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles  !!!!! SHANNON'S CODE !!!!
    ========================================================================== */
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 .header-container {
     background-color: black;
-    padding: 5px;
-    margin: 0;
+    padding: 10px 10px 10px 20px;
+}
+
+body {
+    font-size: 22px;
+    line-height: 1.5em;
 }
 
 h1, h2, .intro-button {
@@ -112,16 +122,89 @@ h1 {
 
 h2 {
     color: white;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
 }
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    text-align: center;
+}
+
+.articles {
+    overflow: auto;
+}
+
 .intro {
     border: 1px solid red;
     background-image: url('../img/purple-bg.jpg');
 }
 
+.intro-button {
+    border: 3px solid white;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 20px 0px;
+    width: 195px;
+}
 
+.intro-button >a {
+    text-decoration: none;
+    color: white;
+}
 
+.intro-button >a:hover {
+    background: white;
+    color: black;
+}
 
+.article-1, .article-2 {
+    padding: 30px 30px 30px 25px;
+    border-bottom: 1px solid #E8E8E8;
+    overflow: auto;
+}
 
+.col-1-2 {
+    border: 1px solid #fff;
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.col-1-2 a {
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: .2;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.col-1-2 a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.project-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    text-align: center;
+}
 
 
 /* ==========================================================================
