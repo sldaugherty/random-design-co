@@ -142,6 +142,8 @@ h4 {
 .intro {
     border: 1px solid red;
     background-image: url('../img/purple-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .intro-button {
