@@ -109,7 +109,7 @@ body {
 
 
 /**** HEADERS ****/
-h1, h2, .intro-button {
+h1, h2, .button {
     color: white;
 }
 
@@ -141,11 +141,21 @@ h4 {
     z-index: 10;
 }
 
+.co-name {
+    float: left;
+}
+
+.fa-bars {
+    color: white;
+    float: right;
+    padding: .9em .9em;
+}
+
 img {
     max-width: 100%;
 }
 
-/**** HERO IMAGE *****/
+/**** HERO IMAGE AND IT'S CONTENT *****/
 .jumbotron {
     padding: 0;
     position: relative;
@@ -168,16 +178,16 @@ img {
     text-align: center;
 }
 
-.intro-button {
+.button {
     display: inline-block;
     border: 3px solid white;
     padding: .5em 1em;
     font-size: 1.25em;
     text-decoration: none;
-    color: white;
 }
 
-.intro-button a:hover {
+a.button:hover {
+    border: 20px solid yellow;
     background: white;
     color: black;
 }
