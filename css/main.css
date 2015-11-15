@@ -102,21 +102,13 @@ html {
   box-sizing: inherit;
 }
 
-.header-container {
-    background-color: black;
-    padding: 10px 10px 10px 20px;
-    width: 100%;
-    position: fixed;
-}
-
 body {
     font-size: 22px;
     line-height: 1.5em;
 }
 
-img {
-    max-width: 100%;
-}
+
+/**** HEADERS ****/
 h1, h2, .intro-button {
     color: white;
 }
@@ -126,8 +118,6 @@ h1 {
 }
 
 h2 {
-    color: white;
-    text-align: center;
     font-size: 3em;
     line-height: 1em;
 }
@@ -140,34 +130,63 @@ h4 {
     text-align: center;
 }
 
-.articles {
-    overflow: auto;
+
+/**** CONTENT ****/
+
+.header-container {
+    background-color: black;
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
-.intro {
-    border: 1px solid red;
-    background-image: url('../img/purple-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+img {
+    max-width: 100%;
+}
+
+/**** HERO IMAGE *****/
+.jumbotron {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 30em;
+    background-color: hsla(0, 0% 0% 0.5);
+    z-index: -10;
+}
+
+.jumbotron .hero-img {
+    display: block;
+    width: 100%;
+}
+
+.hero-img-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .intro-button {
+    display: inline-block;
     border: 3px solid white;
+    padding: .5em 1em;
     font-size: 1.25em;
-    text-align: center;
-    padding: 20px 0px;
-    width: 195px;
-}
-
-.intro-button >a {
     text-decoration: none;
     color: white;
 }
 
-.intro-button >a:hover {
+.intro-button a:hover {
     background: white;
     color: black;
 }
+
+/**** ARTICLES *****/
+
+/*.articles {
+    overflow: auto;
+}*/
 
 .article-1, .article-2 {
     padding: 30px 30px 30px 25px;
@@ -186,7 +205,7 @@ h4 {
     color: black;
 }
 
-img {
+.articles img {
     width: 100%;
     height: auto;
     opacity: .2;
