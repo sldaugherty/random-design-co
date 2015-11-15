@@ -105,6 +105,8 @@ html {
 .header-container {
     background-color: black;
     padding: 10px 10px 10px 20px;
+    width: 100%;
+    position: fixed;
 }
 
 body {
@@ -112,6 +114,9 @@ body {
     line-height: 1.5em;
 }
 
+img {
+    max-width: 100%;
+}
 h1, h2, .intro-button {
     color: white;
 }
