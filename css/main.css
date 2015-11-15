@@ -162,15 +162,15 @@ img {
     overflow: hidden;
     max-height: 30em;
     background-color: hsla(0, 0% 0% 0.5);
-    z-index: -10;
 }
 
 .jumbotron .hero-img {
     display: block;
     width: 100%;
+    z-index: -10;
 }
 
-.hero-img-content {
+.jumbotron-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -187,16 +187,11 @@ img {
 }
 
 a.button:hover {
-    border: 20px solid yellow;
     background: white;
     color: black;
 }
 
 /**** ARTICLES *****/
-
-/*.articles {
-    overflow: auto;
-}*/
 
 .article-1, .article-2 {
     padding: 30px 30px 30px 25px;
