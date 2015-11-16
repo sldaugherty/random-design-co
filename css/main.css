@@ -126,10 +126,6 @@ h3 {
     font-size: 1em;
 }
 
-h4 {
-    text-align: center;
-}
-
 
 /**** CONTENT ****/
 
@@ -155,7 +151,7 @@ img {
     max-width: 100%;
 }
 
-/**** HERO IMAGE AND IT'S CONTENT *****/
+/**** JUMBOTRON AND IT'S CONTENT *****/
 .jumbotron {
     padding: 0;
     position: relative;
@@ -199,39 +195,48 @@ a.button:hover {
     overflow: auto;
 }
 
-.col-1-2 {
-    border: 1px solid #fff;
-    float: left;
-    width: 50%;
+
+/*** PROJECTS ***/
+
+
+.col-1-2-container {
+    background: hsla(0,0%,100%,0.7);
     position: relative;
+    width: 50%;
+    float: left;
 }
 
-.col-1-2 a {
-    color: black;
-}
-
-.articles img {
+.col-1-2-image {
+    display: block;
     width: 100%;
     height: auto;
-    opacity: .2;
+    border: 1px solid white;
+    position: relative;
+    z-index: -10;
 }
 
-img:hover {
-    opacity: 1;
-}
-
-.col-1-2 a:hover {
-    color: #fff;
-    opacity: 1;
-}
-
-.project-container {
-    margin: 0;
+.col-1-2-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.col-1-2-container:hover {
+    background: hsla(0,0%,0%,0);
+    color: white;
+}
+
+.col-1-2-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.col-1-2-container a:hover {
+    color: #fff;
+}
+
+/***** FOOTER ****/
 
 footer {
     text-align: center;
